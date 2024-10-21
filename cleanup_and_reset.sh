@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Remove specified files and directories
-rm ~/.config/instructlab/config.yaml || true
-rm -rf ~/.cache/instructlab/models/* || true
-rm -rf ~/.local/share/instructlab/datasets/* || true
-rm -rf ~/.local/share/instructlab/internal/train_configuration/profiles/* || true
-rm -rf ~/.local/share/instructlab/taxonomy/knowledge/instructlab/ || true
+rm -rf ~/.config/instructlab/*
+rm -rf ~/.cache/instructlab/models/*
+rm -rf ~/.local/share/instructlab/datasets/*
+rm -rf ~/.local/share/instructlab/internal/train_configuration/profiles/*
+rm -rf ~/.local/share/instructlab/taxonomy/knowledge/instructlab/
 
 # Enable pane synchronization in tmux
 tmux setw synchronize-panes on
